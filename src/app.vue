@@ -30,8 +30,9 @@
                 <div class="no">{{item.id}}</div>
                 <div class="hidden">{{item.name}}</div>
               </div>
-              <a target="blank" :href="'https://twitter.com/chiu_hans/status/'+item.post">
+              <a class="link" :id="item.id" target="blank" :href="'https://twitter.com/chiu_hans/status/'+item.post">
                 <img
+                  :id="item.id"
                   :class="{
                   top: true,
                   playall
@@ -40,7 +41,7 @@
                   :src="'./assets/'+item.gif"
                   alt
                 />
-                <img src="./assets/1x1.png" style="opacity:0" alt />
+                <img class="hiddenimg" :id="item.id" src="./assets/1x1.png" style="opacity:0" alt />
               </a>
             </div>
           </div>
