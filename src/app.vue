@@ -6,7 +6,7 @@
           <a href="https://nodevember.io/">#Nodevember</a> 2019
         </h1>
         <h4>
-          30 procedural materials made by
+          30 procedural materials by
           <a href="https://twitter.com/chiu_hans" target="blank">Hans Chiu</a>
         </h4>
         <a href="https://twitter.com/hashtag/nodevember" target="blank">#nodevember</a>
