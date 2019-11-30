@@ -3,7 +3,6 @@ const VueLoaderPlugin = require('vue-loader/lib/plugin')
 const htmlWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin');
 module.exports = {
-    mode: 'production',
     entry: path.join(__dirname, 'src/js/main.js'),
     output: {
         path: path.join(__dirname, 'dist'),

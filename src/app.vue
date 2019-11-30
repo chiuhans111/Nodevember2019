@@ -21,7 +21,7 @@
             <div
               class="item"
               :style="{
-                  backgroundImage: `url(./assets/${item.gif||item.img})`
+                  backgroundImage: `url(./assets/${item.img})`
               }"
               v-for="(item,j) in row"
               :key="j"
@@ -31,6 +31,7 @@
                 <div class="hidden">{{item.name}}</div>
               </div>
               <a target="blank" :href="'https://twitter.com/chiu_hans/status/'+item.post">
+                <img class="top" :src="'./assets/'+item.gif" alt />
                 <img src="./assets/1x1.png" style="opacity:0" alt />
               </a>
             </div>
@@ -230,6 +231,11 @@ export default {
 
       img {
         width: 100%;
+      }
+      .top{
+        position: absolute;
+        width: 100%;
+        height: 100%;
       }
       &:hover {
         border: solid 2px white;
