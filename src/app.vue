@@ -61,7 +61,7 @@
 
         <p>
           <a target="blank" href="https://twitter.com/nodevemberio">@NodevemberIO</a>
-          is a event Organized by
+          is a event organized by
           <a
             target="blank"
             href="https://twitter.com/JonasDichelle"
