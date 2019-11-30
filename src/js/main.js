@@ -1,13 +1,13 @@
-const Vue = require('vue')
+import "../style/main.scss"
+import App from "../app.vue"
+import Vue from 'vue/dist/vue.esm.js'
 
-let works_arr = []
 
 
-console.log('hi')
 
 var app = new Vue({
     el: "#app",
-    data: {
-        works: "yee"
-    }
+    components: { App },
+
+    template: '<App/>',
 })

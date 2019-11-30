@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  background: white;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  padding: 16px;
+  overflow-x: hidden;
+}
+
+.ml{
+  margin-left: 16px;
+}
+
+.mr{
+  margin-right: 16px;
+}
+
+
+.mt{
+  margin-top: 16px;
+}
+
+
