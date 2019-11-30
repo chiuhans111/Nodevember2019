@@ -149,7 +149,7 @@
                 <td>Title</td>
                 <td>Nodes Count</td>
               </tr>
-              <tr v-for="(item,i) in works.sort((a,b)=>a.nodes-b.nodes)" :key="i">
+              <tr v-for="(item,i) in works_sbn" :key="i">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.nodes}}</td>
@@ -165,7 +165,7 @@
                 <td>Title</td>
                 <td>Vertices</td>
               </tr>
-              <tr v-for="(item,i) in works.sort((a,b)=>a.verts-b.verts)" :key="i">
+              <tr v-for="(item,i) in works_sbv" :key="i">
                 <td>{{item.id}}</td>
                 <td>{{item.name}}</td>
                 <td>{{item.verts}}</td>
@@ -200,9 +200,6 @@
 
         <h6>count vertices:</h6>
         <code>sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
-
-
-        
       </section>
       <footer>
         <br />
@@ -248,6 +245,11 @@ for (var i in works) {
 
 works_arr.sort((a, b) => a.id - b.id);
 
+
+var works_sbn = works_arr.slice(1)
+var works_sbv = works_arr.slice(1)
+works_sbn.sort((a,b)=>a.nodes-b.nodes)
+works_sbv.sort((a,b)=>a.verts-b.verts)
 export default {
   name: "app",
   data() {
@@ -268,7 +270,8 @@ export default {
         works_arr.slice(21, 26),
         works_arr.slice(26, 31)
       ],
-      works: works_arr.slice(1),
+      works_sbn,
+      works_sbv,
       playall: false,
       info
     };
