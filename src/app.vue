@@ -21,7 +21,7 @@
             <div
               class="item"
               :style="{
-                  backgroundImage: `url(./assets/${item.img})`
+                  backgroundImage: `url(./assets/${item.gif||item.img})`
               }"
               v-for="(item,j) in row"
               :key="j"
