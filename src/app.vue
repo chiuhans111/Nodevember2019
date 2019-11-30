@@ -73,7 +73,7 @@
           <a target="blank" href="https://nodevember.io/">nodevember.io</a>
         </p>
         <p>In November 2019, we make a procedural material inspired by the prompt given by #nodevember for each day, without using any image textures, modelling or sculpting.</p>
-        <p>That means everything will need to be done in the "Nodes", which is a way to build procedural material visually, and the main software used is Blender3D. (also many Substance Designer participants)</p>
+        <p>That means everything will need to be done with "Nodes", which is a way to build procedural material.</p>
         <br />
         <h3>Techniques</h3>
         <hr />
