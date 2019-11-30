@@ -30,7 +30,12 @@
                 <div class="no">{{item.id}}</div>
                 <div class="hidden">{{item.name}}</div>
               </div>
-              <a class="link" :id="item.id" target="blank" :href="'https://twitter.com/chiu_hans/status/'+item.post">
+              <a
+                class="link"
+                :id="item.id"
+                target="blank"
+                :href="'https://twitter.com/chiu_hans/status/'+item.post"
+              >
                 <img
                   :id="item.id"
                   :class="{
@@ -110,8 +115,97 @@
             </div>
           </li>
         </ul>
+        <br />
+
+        <h3>Fun Facts</h3>
+        <hr />
+
+        <h5>Statistics</h5>
+
+        <table>
+          <tr>
+            <td>value</td>
+            <td>total</td>
+            <td>average</td>
+          </tr>
+          <tr>
+            <td>nodes</td>
+            <td>{{info.sum}}</td>
+            <td>{{info.ave}} / project</td>
+          </tr>
+          <tr>
+            <td>vertices</td>
+            <td>{{info.sum_verts}}</td>
+            <td>{{info.ave_verts}} / project</td>
+          </tr>
+        </table>
+
+        <div class="row">
+          <div class="mr">
+            <h5>Sort By Nodes Count</h5>
+            <table>
+              <tr>
+                <td>No.</td>
+                <td>Title</td>
+                <td>Nodes Count</td>
+              </tr>
+              <tr v-for="(item,i) in works.sort((a,b)=>a.nodes-b.nodes)" :key="i">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.nodes}}</td>
+              </tr>
+            </table>
+          </div>
+
+          <div>
+            <h5>Sort By Vertices</h5>
+            <table>
+              <tr>
+                <td>No.</td>
+                <td>Title</td>
+                <td>Vertices</td>
+              </tr>
+              <tr v-for="(item,i) in works.sort((a,b)=>a.verts-b.verts)" :key="i">
+                <td>{{item.id}}</td>
+                <td>{{item.name}}</td>
+                <td>{{item.verts}}</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        <br />
+
+        <h5>Why?</h5>
+        <p>
+          Q. Why clouds have no vertices?
+          <br />A. because it's all on the background.
+        </p>
+
+        <p>
+          Q. Why Paper takes so much nodes?
+          <br />A. You know.. folding papers... is hard...
+        </p>
+
+        <p>
+          Q. Why Greeble takes so much vertices?
+          <br />A. for Greeble displcement to work perfectly.
+        </p>
+
+        <br />
+        <h5>How I calculate all of this?</h5>
+        <p>Blender has a very convinent python API, so I can write program to do this :)</p>
+
+        <h6>count nodes:</h6>
+        <code>sum([len(m.node_tree.nodes) for m in bpy.data.materials]</code>
+
+        <h6>count vertices:</h6>
+        <code>sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
+
+
+        
       </section>
       <footer>
+        <br />
         <br />
         <h4>Who design this website?</h4>
         <hr />
@@ -131,6 +225,7 @@
 
 <script>
 import works from "./js/works.json";
+import info from "./js/info.json";
 
 let works_arr = [];
 
@@ -142,6 +237,12 @@ for (var i in works) {
       return x.slice(0, 1).toUpperCase() + x.slice(1);
     })
     .join(" ");
+
+  if (info[i]) {
+    works[i].nodes = info[i].nodes_count;
+    works[i].verts = info[i].vertices;
+  }
+
   works_arr.push(works[i]);
 }
 
@@ -167,7 +268,9 @@ export default {
         works_arr.slice(21, 26),
         works_arr.slice(26, 31)
       ],
-      playall: false
+      works: works_arr.slice(1),
+      playall: false,
+      info
     };
   },
   components: {}

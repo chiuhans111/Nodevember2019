@@ -12,17 +12,23 @@
   overflow-x: hidden;
 }
 
-.ml{
+.ml {
   margin-left: 16px;
 }
 
-.mr{
+.mr {
   margin-right: 16px;
 }
 
-
-.mt{
+.mt {
   margin-top: 16px;
 }
 
-
+table {
+  border-collapse: collapse;
+  border: solid 1px gray;
+  td{
+    padding: 8px;
+    border: solid 1px gray;
+  }
+}
