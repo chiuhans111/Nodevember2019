@@ -31,7 +31,15 @@
                 <div class="hidden">{{item.name}}</div>
               </div>
               <a target="blank" :href="'https://twitter.com/chiu_hans/status/'+item.post">
-                <img class="top" :src="'./assets/'+item.gif" alt />
+                <img
+                  :class="{
+                  top: true,
+                  playall
+                  }"
+                  v-if="item.gif!=null"
+                  :src="'./assets/'+item.gif"
+                  alt
+                />
                 <img src="./assets/1x1.png" style="opacity:0" alt />
               </a>
             </div>
@@ -40,6 +48,13 @@
       </section>
       <br />
       <section>
+        <br />
+
+        <p>
+          <input type="checkbox" name="playall" id="playall" v-model="playall" />
+          <label for="playall">Play all animations (might crash)</label>
+        </p>
+
         <h3>What is this?</h3>
         <h5>Everything you see here are all generated using Blender3D shader nodes!</h5>
         <hr />
@@ -150,7 +165,8 @@ export default {
         works_arr.slice(16, 21),
         works_arr.slice(21, 26),
         works_arr.slice(26, 31)
-      ]
+      ],
+      playall: false
     };
   },
   components: {}
@@ -158,6 +174,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+img {
+  flex-shrink: 0;
+}
 .row {
   width: 100%;
   display: flex;
@@ -202,12 +221,15 @@ export default {
       background-position: center;
 
       .info {
+        pointer-events: none;
+
         text-align: left;
         position: absolute;
         color: white;
         width: 100%;
         height: 100%;
         .no {
+          z-index: 1;
           position: absolute;
           left: 0px;
           bottom: 0px;
@@ -232,19 +254,28 @@ export default {
       img {
         width: 100%;
       }
-      .top{
+      .top {
         position: absolute;
         width: 100%;
         height: 100%;
+        display: none;
       }
+      .top.playall {
+        display: block;
+      }
+
       &:hover {
         border: solid 2px white;
         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.5),
           0 15px 12px rgba(0, 0, 0, 0.22);
         z-index: 2;
-        transform: scale(1.1);
+        transform: scale(1.2);
         .info .hidden {
           opacity: 1;
+          pointer-events: all;
+        }
+        .top {
+          display: block;
         }
       }
       transition: transform 0.1s;
