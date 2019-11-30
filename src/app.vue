@@ -6,7 +6,7 @@
           <a href="https://nodevember.io/">#Nodevember</a> 2019
         </h1>
         <h4>
-          30 procedural materials by
+          30 procedural materials made by
           <a href="https://twitter.com/chiu_hans" target="blank">Hans Chiu</a>
         </h4>
         <a href="https://twitter.com/hashtag/nodevember" target="blank">#nodevember</a>
@@ -112,9 +112,9 @@
       </section>
       <footer>
         <br />
-        <h3>Who design this website?</h3>
-        <h5>me :)</h5>
+        <h4>Who design this website?</h4>
         <hr />
+        <p>me :)</p>
         <p>I am too lazy to layout all 30 images one by one...</p>
         <p>
           Github:
