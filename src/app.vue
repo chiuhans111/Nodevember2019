@@ -199,10 +199,10 @@
           count nodes: 
           <span class="notify">updated!</span>
         </h6>
-        <code>sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])</code>
+        <code id="code_for_nodes" class="code">sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])</code>
 
         <h6>count vertices:</h6>
-        <code>sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
+        <code id="code_for_verts">sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
       </section>
       <footer>
         <br />
