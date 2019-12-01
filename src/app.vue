@@ -117,8 +117,18 @@
         </ul>
         <br />
 
-        <h3>Fun Facts <span class="notify">updated!</span></h3>
+        <h3>
+          Fun Facts
+          <span class="notify">updated!</span>
+        </h3>
         <hr />
+
+        <p>
+          Thanks
+          <a target="blank" href="https://twitter.com/JonasDichelle">@JonasDichelle</a>
+          pointing out, I forgot to count the nodes in the groups,
+          so I updated the numbers and the code for counting them.
+        </p>
 
         <h5>Statistics</h5>
 
@@ -130,8 +140,14 @@
           </tr>
           <tr>
             <td>nodes</td>
-            <td>{{info.sum}}</td>
-            <td>{{info.ave}} / project</td>
+            <td>
+              <s>{{info_old.sum}}</s>
+              → {{info.sum}}
+            </td>
+            <td>
+              <s>{{info_old.ave}}</s>
+              → {{info.ave}} / project
+            </td>
           </tr>
           <tr>
             <td>vertices</td>
@@ -145,14 +161,19 @@
             <h5>Sort By Nodes Count</h5>
             <table>
               <tr>
-                <td>No.</td>
+                <td>Rank</td>
                 <td>Title</td>
                 <td>Nodes Count</td>
               </tr>
               <tr v-for="(item,i) in works_sbn" :key="i">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
-                <td>{{item.nodes}}</td>
+                <td>{{i+1}}</td>
+                <td>{{item.id}}. {{item.name}}</td>
+                <td>
+                  <template v-if="item.nodes_old!=item.nodes">
+                    <s>{{item.nodes_old}}</s> →
+                  </template>
+                  {{item.nodes}}
+                </td>
               </tr>
             </table>
           </div>
@@ -161,13 +182,13 @@
             <h5>Sort By Vertices</h5>
             <table>
               <tr>
-                <td>No.</td>
+                <td>Rank</td>
                 <td>Title</td>
                 <td>Vertices</td>
               </tr>
               <tr v-for="(item,i) in works_sbv" :key="i">
-                <td>{{item.id}}</td>
-                <td>{{item.name}}</td>
+                <td>{{i+1}}</td>
+                <td>{{item.id}}. {{item.name}}</td>
                 <td>{{item.verts}}</td>
               </tr>
             </table>
@@ -196,13 +217,18 @@
         <p>Blender has a very convinent python API, so I can write program to do this :)</p>
 
         <h6>
-          count nodes: 
+          count nodes:
           <span class="notify">updated!</span>
         </h6>
-        <code id="code_for_nodes" class="code">sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])</code>
+        <code
+          id="code_for_nodes"
+          class="code"
+        >sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])</code>
 
         <h6>count vertices:</h6>
-        <code id="code_for_verts">sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
+        <code
+          id="code_for_verts"
+        >sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
       </section>
       <footer>
         <br />
@@ -226,6 +252,7 @@
 <script>
 import works from "./js/works.json";
 import info from "./js/info.json";
+import info_old from "./js/info_old.json";
 
 let works_arr = [];
 
@@ -241,6 +268,7 @@ for (var i in works) {
   if (info[i]) {
     works[i].nodes = info[i].nodes_count;
     works[i].verts = info[i].vertices;
+    works[i].nodes_old = info_old[i].nodes_count;
   }
 
   works_arr.push(works[i]);
@@ -275,7 +303,8 @@ export default {
       works_sbn,
       works_sbv,
       playall: false,
-      info
+      info,
+      info_old
     };
   },
   components: {}
@@ -283,6 +312,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+s {
+  color: gray;
+}
+
 img {
   flex-shrink: 0;
 }
