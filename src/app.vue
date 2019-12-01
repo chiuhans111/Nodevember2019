@@ -124,7 +124,7 @@
         <hr />
 
         <p>
-          Thanks
+          Thanks to
           <a target="blank" href="https://twitter.com/JonasDichelle">@JonasDichelle</a>
           pointing out, I forgot to count the nodes in the groups,
           so I updated the numbers and the code for counting them.
