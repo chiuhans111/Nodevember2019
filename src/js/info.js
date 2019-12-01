@@ -52,7 +52,7 @@ for (let i = 1; i <= 30; i++) {
     result[id] = {}
 
     tasks.push(() => loadfile(i))
-    tasks.push(() => p.stdin.write(`sum([len(m.node_tree.nodes) for m in bpy.data.materials])\n`))
+    tasks.push(() => p.stdin.write(`sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])\n`))
     tasks.push(x => {
 
         result[id].nodes_count = +x.trim()

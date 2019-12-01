@@ -117,7 +117,7 @@
         </ul>
         <br />
 
-        <h3>Fun Facts</h3>
+        <h3>Fun Facts <span class="notify">updated!</span></h3>
         <hr />
 
         <h5>Statistics</h5>
@@ -195,8 +195,11 @@
         <h5>How I calculate all of this?</h5>
         <p>Blender has a very convinent python API, so I can write program to do this :)</p>
 
-        <h6>count nodes:</h6>
-        <code>sum([len(m.node_tree.nodes) for m in bpy.data.materials]</code>
+        <h6>
+          count nodes: 
+          <span class="notify">updated!</span>
+        </h6>
+        <code>sum([len(m.node_tree.nodes) for m in bpy.data.materials])+sum([len(m.nodes)-2 for m in bpy.data.node_groups])</code>
 
         <h6>count vertices:</h6>
         <code>sum([len(o.data.vertices) for o in bpy.context.scene.objects if hasattr(o.data,'vertices')])</code>
@@ -245,11 +248,10 @@ for (var i in works) {
 
 works_arr.sort((a, b) => a.id - b.id);
 
-
-var works_sbn = works_arr.slice(1)
-var works_sbv = works_arr.slice(1)
-works_sbn.sort((a,b)=>a.nodes-b.nodes)
-works_sbv.sort((a,b)=>a.verts-b.verts)
+var works_sbn = works_arr.slice(1);
+var works_sbv = works_arr.slice(1);
+works_sbn.sort((a, b) => a.nodes - b.nodes);
+works_sbv.sort((a, b) => a.verts - b.verts);
 export default {
   name: "app",
   data() {
@@ -283,6 +285,14 @@ export default {
 <style lang="scss" scoped>
 img {
   flex-shrink: 0;
+}
+
+.notify {
+  font-size: 12px;
+  padding: 2px;
+  border-radius: 2px;
+  background-color: rgb(244, 93, 34);
+  color: white;
 }
 .row {
   width: 100%;
