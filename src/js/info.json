@@ -1,1 +1,1155 @@
-{"10":{"nodes_count":65,"vertices":482},"11":{"nodes_count":54,"vertices":642},"12":{"nodes_count":434,"vertices":8},"13":{"nodes_count":118,"vertices":4},"14":{"nodes_count":25,"vertices":4},"15":{"nodes_count":44,"vertices":4},"16":{"nodes_count":74,"vertices":1001},"17":{"nodes_count":268,"vertices":12},"18":{"nodes_count":239,"vertices":4},"19":{"nodes_count":252,"vertices":8},"20":{"nodes_count":150,"vertices":4},"21":{"nodes_count":44,"vertices":8},"22":{"nodes_count":202,"vertices":12},"23":{"nodes_count":182,"vertices":482},"24":{"nodes_count":160,"vertices":8},"25":{"nodes_count":105,"vertices":12},"26":{"nodes_count":200,"vertices":12},"27":{"nodes_count":28,"vertices":8},"28":{"nodes_count":5,"vertices":8},"29":{"nodes_count":186,"vertices":4},"30":{"nodes_count":38,"vertices":8},"01":{"nodes_count":6,"vertices":4},"02":{"nodes_count":133,"vertices":0},"03":{"nodes_count":45,"vertices":4},"04":{"nodes_count":186,"vertices":8},"05":{"nodes_count":250,"vertices":162},"06":{"nodes_count":88,"vertices":4},"07":{"nodes_count":179,"vertices":166},"08":{"nodes_count":77,"vertices":8},"09":{"nodes_count":87,"vertices":4},"sum":3924,"ave":130.8,"sum_verts":3095,"ave_verts":103.16666666666667}
+{
+    "10": {
+        "nodes_count": 65,
+        "vertices": 482,
+        "nodes": {
+            "ShaderNodeVectorDisplacement": 2,
+            "ShaderNodeSeparateXYZ": 2,
+            "ShaderNodeCombineXYZ": 2,
+            "ShaderNodeMath": 42,
+            "ShaderNodeVectorMath": 4,
+            "NodeReroute": 1,
+            "ShaderNodeMixRGB": 3,
+            "ShaderNodeFresnel": 1,
+            "ShaderNodeValToRGB": 2,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeValue": 1,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeTexNoise": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ARCTAN2": 2,
+            "ShaderNodeMath_ADD": 10,
+            "ShaderNodeVectorMath_NORMALIZE": 1,
+            "ShaderNodeMath_DIVIDE": 1,
+            "ShaderNodeMath_ROUND": 1,
+            "ShaderNodeMath_MULTIPLY": 18,
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeMath_POWER": 5,
+            "ShaderNodeMath_SUBTRACT": 3,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeVectorMath_ADD": 2,
+            "ShaderNodeMath_SINE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 1,
+            "ShaderNodeMixRGB_ADD": 2
+        }
+    },
+    "11": {
+        "nodes_count": 54,
+        "vertices": 642,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 5,
+            "ShaderNodeBsdfPrincipled": 5,
+            "ShaderNodeBump": 2,
+            "ShaderNodeTexNoise": 10,
+            "ShaderNodeValToRGB": 8,
+            "ShaderNodeMixRGB": 8,
+            "ShaderNodeBevel": 2,
+            "ShaderNodeMath": 8,
+            "ShaderNodeTexVoronoi": 4,
+            "ShaderNodeNewGeometry": 2
+        },
+        "operations": {
+            "ShaderNodeMath_POWER": 2,
+            "ShaderNodeMath_SUBTRACT": 2,
+            "ShaderNodeMath_MULTIPLY": 4
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 8
+        }
+    },
+    "12": {
+        "nodes_count": 434,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 7,
+            "ShaderNodeBsdfPrincipled": 7,
+            "ShaderNodeCombineXYZ": 116,
+            "ShaderNodeValue": 77,
+            "ShaderNodeGroup": 36,
+            "ShaderNodeMath": 79,
+            "ShaderNodeTexCoord": 8,
+            "NodeReroute": 53,
+            "ShaderNodeVectorMath": 26,
+            "ShaderNodeMixRGB": 12,
+            "ShaderNodeNewGeometry": 4,
+            "NodeFrame": 4,
+            "ShaderNodeSeparateXYZ": 4,
+            "ShaderNodeRGBCurve": 1,
+            "NodeGroupInput": 1,
+            "NodeGroupOutput": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 32,
+            "ShaderNodeMath_LESS_THAN": 3,
+            "ShaderNodeMath_MULTIPLY": 15,
+            "ShaderNodeMath_SUBTRACT": 9,
+            "ShaderNodeMath_POWER": 6,
+            "ShaderNodeMath_GREATER_THAN": 3,
+            "ShaderNodeVectorMath_SUBTRACT": 9,
+            "ShaderNodeVectorMath_ADD": 5,
+            "ShaderNodeVectorMath_NORMALIZE": 5,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 3,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 3,
+            "ShaderNodeMath_DIVIDE": 4,
+            "ShaderNodeMath_ARCTANGENT": 2,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeVectorMath_LENGTH": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 9,
+            "ShaderNodeMixRGB_MULTIPLY": 3
+        }
+    },
+    "13": {
+        "nodes_count": 118,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeTexCoord": 2,
+            "ShaderNodeSeparateXYZ": 5,
+            "ShaderNodeCombineXYZ": 8,
+            "ShaderNodeVectorMath": 13,
+            "ShaderNodeMath": 48,
+            "NodeReroute": 6,
+            "ShaderNodeOutputMaterial": 2,
+            "ShaderNodeValue": 6,
+            "ShaderNodeMixRGB": 18,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeTexChecker": 1,
+            "ShaderNodeVectorDisplacement": 3,
+            "ShaderNodeValToRGB": 1,
+            "ShaderNodeTexNoise": 1,
+            "ShaderNodeBsdfTransparent": 1,
+            "ShaderNodeMixShader": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_SUBTRACT": 4,
+            "ShaderNodeMath_GREATER_THAN": 4,
+            "ShaderNodeMath_MULTIPLY": 14,
+            "ShaderNodeMath_COSINE": 4,
+            "ShaderNodeMath_ADD": 5,
+            "ShaderNodeMath_DIVIDE": 6,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeMath_SINE": 3,
+            "ShaderNodeVectorMath_ADD": 6,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_MAXIMUM": 1,
+            "ShaderNodeMath_SUBTRACT": 4,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 1,
+            "ShaderNodeVectorMath_NORMALIZE": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 6,
+            "ShaderNodeMixRGB_MULTIPLY": 10,
+            "ShaderNodeMixRGB_ADD": 2
+        }
+    },
+    "14": {
+        "nodes_count": 25,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeVectorDisplacement": 1,
+            "ShaderNodeSeparateXYZ": 1,
+            "ShaderNodeVectorMath": 1,
+            "ShaderNodeCombineXYZ": 2,
+            "ShaderNodeValue": 3,
+            "ShaderNodeMath": 11,
+            "ShaderNodeMixRGB": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeValToRGB": 1,
+            "ShaderNodeTexNoise": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeMath_DIVIDE": 2,
+            "ShaderNodeMath_FRACT": 1,
+            "ShaderNodeMath_SUBTRACT": 1,
+            "ShaderNodeMath_ABSOLUTE": 1,
+            "ShaderNodeMath_MULTIPLY": 2,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeMath_FLOOR": 1,
+            "ShaderNodeMath_ARCTAN2": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 1
+        }
+    },
+    "15": {
+        "nodes_count": 44,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 2,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeTexBrick": 1,
+            "ShaderNodeCombineXYZ": 2,
+            "ShaderNodeVectorMath": 1,
+            "ShaderNodeTexNoise": 3,
+            "ShaderNodeMixRGB": 8,
+            "ShaderNodeValToRGB": 3,
+            "ShaderNodeMath": 11,
+            "ShaderNodeTexVoronoi": 6,
+            "NodeReroute": 2,
+            "ShaderNodeBump": 1,
+            "ShaderNodeVectorDisplacement": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_ADD": 1,
+            "ShaderNodeMath_MULTIPLY": 6,
+            "ShaderNodeMath_POWER": 2,
+            "ShaderNodeMath_SUBTRACT": 3
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_ADD": 3,
+            "ShaderNodeMixRGB_SUBTRACT": 1,
+            "ShaderNodeMixRGB_MULTIPLY": 1,
+            "ShaderNodeMixRGB_MIX": 3
+        }
+    },
+    "16": {
+        "nodes_count": 74,
+        "vertices": 1001,
+        "nodes": {
+            "ShaderNodeVectorMath": 8,
+            "ShaderNodeMath": 31,
+            "ShaderNodeCombineXYZ": 6,
+            "ShaderNodeGroup": 3,
+            "ShaderNodeTexNoise": 2,
+            "ShaderNodeValToRGB": 4,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeMixRGB": 4,
+            "ShaderNodeValue": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeBsdfPrincipled": 1,
+            "NodeReroute": 3,
+            "ShaderNodeSeparateXYZ": 1,
+            "ShaderNodeMapping": 1,
+            "ShaderNodeTexCoord": 1,
+            "NodeGroupInput": 1,
+            "ShaderNodeTexBrick": 5,
+            "ShaderNodeTexVoronoi": 1,
+            "NodeGroupOutput": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_DOT_PRODUCT": 3,
+            "ShaderNodeMath_ABSOLUTE": 3,
+            "ShaderNodeMath_MULTIPLY": 12,
+            "ShaderNodeMath_ADD": 10,
+            "ShaderNodeMath_SQRT": 1,
+            "ShaderNodeVectorMath_ADD": 5,
+            "ShaderNodeMath_SUBTRACT": 3,
+            "ShaderNodeMath_DIVIDE": 1,
+            "ShaderNodeMath_MAXIMUM": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 3,
+            "ShaderNodeMixRGB_MIX": 1
+        }
+    },
+    "17": {
+        "nodes_count": 268,
+        "vertices": 12,
+        "nodes": {
+            "ShaderNodeMath": 133,
+            "ShaderNodeTexNoise": 16,
+            "ShaderNodeCombineXYZ": 27,
+            "ShaderNodeTexCoord": 3,
+            "ShaderNodeFresnel": 2,
+            "ShaderNodeMixRGB": 8,
+            "NodeReroute": 7,
+            "ShaderNodeVectorMath": 12,
+            "ShaderNodeSeparateXYZ": 14,
+            "ShaderNodeNewGeometry": 5,
+            "ShaderNodeValue": 9,
+            "ShaderNodeVectorDisplacement": 5,
+            "ShaderNodeValToRGB": 6,
+            "ShaderNodeObjectInfo": 2,
+            "ShaderNodeOutputMaterial": 4,
+            "ShaderNodeAmbientOcclusion": 2,
+            "ShaderNodeEmission": 3,
+            "ShaderNodeBsdfTransparent": 3,
+            "ShaderNodeRGBCurve": 3,
+            "ShaderNodeAddShader": 2,
+            "ShaderNodeMixShader": 1,
+            "ShaderNodeBsdfPrincipled": 1
+        },
+        "operations": {
+            "ShaderNodeMath_FRACT": 11,
+            "ShaderNodeMath_MULTIPLY": 48,
+            "ShaderNodeMath_ADD": 6,
+            "ShaderNodeMath_DIVIDE": 9,
+            "ShaderNodeVectorMath_SUBTRACT": 3,
+            "ShaderNodeMath_GREATER_THAN": 8,
+            "ShaderNodeMath_SUBTRACT": 21,
+            "ShaderNodeMath_ABSOLUTE": 10,
+            "ShaderNodeMath_ROUND": 6,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 5,
+            "ShaderNodeMath_COSINE": 2,
+            "ShaderNodeVectorMath_ADD": 4,
+            "ShaderNodeMath_POWER": 4,
+            "ShaderNodeMath_SINE": 2,
+            "ShaderNodeMath_LESS_THAN": 4,
+            "ShaderNodeMath_MAXIMUM": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 3,
+            "ShaderNodeMixRGB_MULTIPLY": 5
+        }
+    },
+    "18": {
+        "nodes_count": 239,
+        "vertices": 4,
+        "nodes": {
+            "NodeReroute": 14,
+            "ShaderNodeMath": 109,
+            "ShaderNodeValue": 14,
+            "ShaderNodeVectorMath": 20,
+            "ShaderNodeMixRGB": 15,
+            "ShaderNodeCombineXYZ": 30,
+            "ShaderNodeSeparateXYZ": 12,
+            "ShaderNodeTexGradient": 12,
+            "ShaderNodeGroup": 6,
+            "ShaderNodeOutputMaterial": 2,
+            "ShaderNodeEmission": 2,
+            "ShaderNodeTexCoord": 3,
+            "NodeGroupOutput": 3,
+            "NodeGroupInput": 3
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 27,
+            "ShaderNodeMath_MULTIPLY": 23,
+            "ShaderNodeMath_SINE": 5,
+            "ShaderNodeVectorMath_SUBTRACT": 13,
+            "ShaderNodeMath_ABSOLUTE": 4,
+            "ShaderNodeMath_GREATER_THAN": 15,
+            "ShaderNodeMath_SUBTRACT": 19,
+            "ShaderNodeMath_MINIMUM": 2,
+            "ShaderNodeVectorMath_ADD": 7,
+            "ShaderNodeMath_DIVIDE": 3,
+            "ShaderNodeMath_LESS_THAN": 6,
+            "ShaderNodeMath_SQRT": 1,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeMath_FRACT": 2,
+            "ShaderNodeMath_COSINE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 12,
+            "ShaderNodeMixRGB_MIX": 3
+        }
+    },
+    "19": {
+        "nodes_count": 252,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeValue": 11,
+            "ShaderNodeMath": 116,
+            "NodeReroute": 32,
+            "ShaderNodeTexGradient": 2,
+            "ShaderNodeMixRGB": 11,
+            "ShaderNodeGroup": 30,
+            "ShaderNodeSeparateXYZ": 10,
+            "ShaderNodeValToRGB": 4,
+            "ShaderNodeBsdfPrincipled": 3,
+            "ShaderNodeBump": 1,
+            "ShaderNodeTexCoord": 2,
+            "ShaderNodeCombineXYZ": 14,
+            "ShaderNodeTexNoise": 5,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeAddShader": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeMixShader": 3,
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeBsdfTransparent": 1,
+            "NodeGroupInput": 3,
+            "NodeGroupOutput": 3
+        },
+        "operations": {
+            "ShaderNodeMath_LESS_THAN": 7,
+            "ShaderNodeMath_SUBTRACT": 21,
+            "ShaderNodeMath_GREATER_THAN": 10,
+            "ShaderNodeMath_ABSOLUTE": 5,
+            "ShaderNodeMath_MULTIPLY": 34,
+            "ShaderNodeMath_MAXIMUM": 13,
+            "ShaderNodeMath_MINIMUM": 3,
+            "ShaderNodeMath_ADD": 11,
+            "ShaderNodeMath_DIVIDE": 4,
+            "ShaderNodeMath_POWER": 1,
+            "ShaderNodeMath_FLOOR": 2,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeVectorMath_SUBTRACT": 3,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeVectorMath_ADD": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_DIVIDE": 2,
+            "ShaderNodeMixRGB_MULTIPLY": 5,
+            "ShaderNodeMixRGB_MIX": 1,
+            "ShaderNodeMixRGB_ADD": 3
+        }
+    },
+    "20": {
+        "nodes_count": 150,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 3,
+            "ShaderNodeBsdfPrincipled": 1,
+            "ShaderNodeMath": 49,
+            "ShaderNodeValue": 6,
+            "ShaderNodeNewGeometry": 2,
+            "ShaderNodeVectorMath": 13,
+            "ShaderNodeMixRGB": 27,
+            "NodeReroute": 8,
+            "ShaderNodeCombineXYZ": 6,
+            "ShaderNodeRGBCurve": 4,
+            "ShaderNodeGroup": 10,
+            "ShaderNodeTexWave": 2,
+            "ShaderNodeTexBrick": 2,
+            "ShaderNodeEmission": 2,
+            "ShaderNodeAddShader": 2,
+            "ShaderNodeMixShader": 11,
+            "NodeGroupOutput": 1,
+            "NodeGroupInput": 1,
+            "ShaderNodeSeparateXYZ": 1,
+            "ShaderNodeTexGradient": 1
+        },
+        "operations": {
+            "ShaderNodeMath_MULTIPLY": 20,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 2,
+            "ShaderNodeVectorMath_SUBTRACT": 7,
+            "ShaderNodeMath_ADD": 5,
+            "ShaderNodeMath_SUBTRACT": 17,
+            "ShaderNodeVectorMath_ADD": 4,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_MAXIMUM": 1,
+            "ShaderNodeMath_MINIMUM": 1,
+            "ShaderNodeMath_GREATER_THAN": 3
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 12,
+            "ShaderNodeMixRGB_DIVIDE": 3,
+            "ShaderNodeMixRGB_MIX": 12
+        }
+    },
+    "21": {
+        "nodes_count": 44,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeTexVoronoi": 3,
+            "ShaderNodeTexNoise": 9,
+            "ShaderNodeMixRGB": 9,
+            "ShaderNodeMath": 10,
+            "NodeReroute": 4,
+            "ShaderNodeRGBCurve": 2,
+            "ShaderNodeValToRGB": 3,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeBsdfPrincipled": 1
+        },
+        "operations": {
+            "ShaderNodeMath_MULTIPLY": 5,
+            "ShaderNodeMath_POWER": 3,
+            "ShaderNodeMath_MAXIMUM": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_ADD": 6,
+            "ShaderNodeMixRGB_MIX": 3
+        }
+    },
+    "22": {
+        "nodes_count": 202,
+        "vertices": 12,
+        "nodes": {
+            "ShaderNodeMath": 137,
+            "NodeReroute": 17,
+            "ShaderNodeCombineXYZ": 9,
+            "ShaderNodeMixRGB": 5,
+            "ShaderNodeVectorMath": 7,
+            "ShaderNodeSeparateXYZ": 4,
+            "ShaderNodeValue": 5,
+            "ShaderNodeValToRGB": 3,
+            "ShaderNodeVectorDisplacement": 2,
+            "ShaderNodeTexCoord": 2,
+            "ShaderNodeNormal": 1,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeMixShader": 2,
+            "ShaderNodeEmission": 3,
+            "ShaderNodeOutputMaterial": 2,
+            "ShaderNodeNewGeometry": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 27,
+            "ShaderNodeMath_SUBTRACT": 15,
+            "ShaderNodeMath_ABSOLUTE": 6,
+            "ShaderNodeMath_MULTIPLY": 47,
+            "ShaderNodeMath_POWER": 14,
+            "ShaderNodeMath_SINE": 11,
+            "ShaderNodeMath_DIVIDE": 3,
+            "ShaderNodeMath_COSINE": 7,
+            "ShaderNodeVectorMath_ADD": 6,
+            "ShaderNodeMath_ARCTAN2": 3,
+            "ShaderNodeMath_MAXIMUM": 2,
+            "ShaderNodeMath_FRACT": 1,
+            "ShaderNodeVectorMath_SUBTRACT": 1,
+            "ShaderNodeMath_GREATER_THAN": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 5
+        }
+    },
+    "23": {
+        "nodes_count": 182,
+        "vertices": 482,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeTexNoise": 15,
+            "ShaderNodeValToRGB": 12,
+            "ShaderNodeMath": 46,
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeMixRGB": 23,
+            "NodeReroute": 26,
+            "ShaderNodeCombineXYZ": 8,
+            "ShaderNodeSeparateXYZ": 6,
+            "ShaderNodeBump": 1,
+            "ShaderNodeFresnel": 2,
+            "ShaderNodeEmission": 6,
+            "ShaderNodeBsdfPrincipled": 3,
+            "ShaderNodeGroup": 4,
+            "ShaderNodeValue": 5,
+            "ShaderNodeTexCoord": 5,
+            "ShaderNodeVectorDisplacement": 3,
+            "ShaderNodeMixShader": 8,
+            "ShaderNodeAddShader": 2,
+            "ShaderNodeBsdfDiffuse": 1,
+            "ShaderNodeDisplacement": 1,
+            "NodeGroupInput": 2,
+            "NodeGroupOutput": 2
+        },
+        "operations": {
+            "ShaderNodeMath_MULTIPLY": 12,
+            "ShaderNodeVectorMath_ADD": 1,
+            "ShaderNodeMath_ADD": 4,
+            "ShaderNodeMath_SUBTRACT": 6,
+            "ShaderNodeMath_GREATER_THAN": 10,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_DIVIDE": 2,
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeMath_SINE": 4,
+            "ShaderNodeMath_COSINE": 3,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 1,
+            "ShaderNodeMath_SQRT": 1,
+            "ShaderNodeMath_ARCCOSINE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 13,
+            "ShaderNodeMixRGB_ADD": 5,
+            "ShaderNodeMixRGB_MULTIPLY": 5
+        }
+    },
+    "24": {
+        "nodes_count": 160,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeMath": 58,
+            "ShaderNodeTexNoise": 28,
+            "NodeReroute": 23,
+            "ShaderNodeMixRGB": 27,
+            "ShaderNodeValToRGB": 10,
+            "ShaderNodeValue": 6,
+            "ShaderNodeNewGeometry": 2,
+            "ShaderNodeMixShader": 1,
+            "ShaderNodeVolumePrincipled": 3,
+            "ShaderNodeOutputMaterial": 2
+        },
+        "operations": {
+            "ShaderNodeMath_SUBTRACT": 16,
+            "ShaderNodeMath_MULTIPLY": 24,
+            "ShaderNodeMath_POWER": 10,
+            "ShaderNodeMath_ADD": 4,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_DIVIDE": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 8,
+            "ShaderNodeMixRGB_MULTIPLY": 9,
+            "ShaderNodeMixRGB_ADD": 10
+        }
+    },
+    "25": {
+        "nodes_count": 105,
+        "vertices": 12,
+        "nodes": {
+            "NodeReroute": 26,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeValue": 5,
+            "ShaderNodeMath": 36,
+            "ShaderNodeRGBCurve": 5,
+            "ShaderNodeVectorMath": 17,
+            "ShaderNodeCombineXYZ": 3,
+            "ShaderNodeMixRGB": 7,
+            "ShaderNodeSeparateXYZ": 1,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeOutputMaterial": 2
+        },
+        "operations": {
+            "ShaderNodeMath_MULTIPLY": 14,
+            "ShaderNodeMath_SUBTRACT": 6,
+            "ShaderNodeMath_ABSOLUTE": 4,
+            "ShaderNodeMath_ADD": 4,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeVectorMath_LENGTH": 2,
+            "ShaderNodeVectorMath_ADD": 4,
+            "ShaderNodeVectorMath_MINIMUM": 1,
+            "ShaderNodeVectorMath_MAXIMUM": 1,
+            "ShaderNodeVectorMath_NORMALIZE": 1,
+            "ShaderNodeVectorMath_SUBTRACT": 4,
+            "ShaderNodeVectorMath_SCALE": 3,
+            "ShaderNodeMath_GREATER_THAN": 2,
+            "ShaderNodeMath_LESS_THAN": 4,
+            "ShaderNodeMath_DIVIDE": 1,
+            "ShaderNodeVectorMath_DISTANCE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 7
+        }
+    },
+    "26": {
+        "nodes_count": 200,
+        "vertices": 12,
+        "nodes": {
+            "ShaderNodeOutputMaterial": 4,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeTexWave": 1,
+            "ShaderNodeMath": 73,
+            "ShaderNodeTexChecker": 1,
+            "ShaderNodeGroup": 8,
+            "ShaderNodeMixRGB": 16,
+            "ShaderNodeRGB": 2,
+            "ShaderNodeVectorMath": 30,
+            "ShaderNodeCombineXYZ": 3,
+            "ShaderNodeNewGeometry": 10,
+            "ShaderNodeAddShader": 8,
+            "ShaderNodeMixShader": 6,
+            "ShaderNodeTexNoise": 14,
+            "ShaderNodeTexVoronoi": 7,
+            "ShaderNodeBsdfDiffuse": 2,
+            "ShaderNodeValToRGB": 2,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeMapping": 1,
+            "ShaderNodeBump": 2,
+            "ShaderNodeBsdfGlossy": 2,
+            "ShaderNodeBsdfRefraction": 2,
+            "NodeGroupOutput": 2,
+            "NodeGroupInput": 2,
+            "NodeReroute": 2,
+            "ShaderNodeValue": 1
+        },
+        "operations": {
+            "ShaderNodeMath_GREATER_THAN": 1,
+            "ShaderNodeMath_ADD": 13,
+            "ShaderNodeMath_POWER": 6,
+            "ShaderNodeMath_MULTIPLY": 36,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 5,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 10,
+            "ShaderNodeMath_SUBTRACT": 13,
+            "ShaderNodeVectorMath_SCALE": 5,
+            "ShaderNodeVectorMath_SUBTRACT": 4,
+            "ShaderNodeVectorMath_NORMALIZE": 2,
+            "ShaderNodeVectorMath_DIVIDE": 2,
+            "ShaderNodeVectorMath_ADD": 1,
+            "ShaderNodeMath_DIVIDE": 3,
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeMath_SQRT": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 6,
+            "ShaderNodeMixRGB_ADD": 4,
+            "ShaderNodeMixRGB_MIX": 6
+        }
+    },
+    "27": {
+        "nodes_count": 28,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeTexNoise": 2,
+            "ShaderNodeMixRGB": 1,
+            "NodeReroute": 5,
+            "ShaderNodeValue": 1,
+            "ShaderNodeMath": 9,
+            "ShaderNodeCombineXYZ": 1,
+            "ShaderNodeMapping": 1,
+            "ShaderNodeValToRGB": 1,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeOutputMaterial": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeMath_MULTIPLY": 1,
+            "ShaderNodeMath_COSINE": 2,
+            "ShaderNodeMath_SINE": 2,
+            "ShaderNodeMath_ADD": 2,
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeVectorMath_NORMALIZE": 1,
+            "ShaderNodeMath_POWER": 1,
+            "ShaderNodeMath_DIVIDE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_ADD": 1
+        }
+    },
+    "28": {
+        "nodes_count": 5,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeTexVoronoi": 1,
+            "ShaderNodeMath": 2,
+            "ShaderNodeVolumePrincipled": 1,
+            "ShaderNodeOutputMaterial": 1
+        },
+        "operations": {
+            "ShaderNodeMath_GREATER_THAN": 1,
+            "ShaderNodeMath_MULTIPLY": 1
+        },
+        "blend_type": {}
+    },
+    "29": {
+        "nodes_count": 186,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeValue": 1,
+            "ShaderNodeMath": 99,
+            "ShaderNodeSeparateXYZ": 6,
+            "ShaderNodeTexGradient": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeMixRGB": 5,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeVectorMath": 27,
+            "ShaderNodeBsdfPrincipled": 1,
+            "ShaderNodeCombineXYZ": 1,
+            "ShaderNodeGroup": 7,
+            "ShaderNodeCombineRGB": 10,
+            "NodeFrame": 2,
+            "NodeReroute": 13,
+            "ShaderNodeInvert": 5,
+            "ShaderNodeSeparateRGB": 2,
+            "NodeGroupOutput": 3,
+            "NodeGroupInput": 3,
+            "ShaderNodeTexNoise": 2
+        },
+        "operations": {
+            "ShaderNodeMath_MULTIPLY": 29,
+            "ShaderNodeMath_LESS_THAN": 8,
+            "ShaderNodeMath_GREATER_THAN": 14,
+            "ShaderNodeMath_ADD": 12,
+            "ShaderNodeMath_SUBTRACT": 3,
+            "ShaderNodeMath_MINIMUM": 9,
+            "ShaderNodeMath_POWER": 2,
+            "ShaderNodeVectorMath_MULTIPLY": 10,
+            "ShaderNodeVectorMath_ADD": 10,
+            "ShaderNodeVectorMath_ABSOLUTE": 1,
+            "ShaderNodeMath_MAXIMUM": 22,
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeVectorMath_FLOOR": 1,
+            "ShaderNodeVectorMath_FRACTION": 1,
+            "ShaderNodeVectorMath_SCALE": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 5
+        }
+    },
+    "30": {
+        "nodes_count": 38,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeMath": 18,
+            "ShaderNodeCombineXYZ": 1,
+            "ShaderNodeSeparateXYZ": 2,
+            "ShaderNodeMapping": 3,
+            "ShaderNodeTexGradient": 1,
+            "ShaderNodeRGBCurve": 2,
+            "ShaderNodeValue": 1,
+            "ShaderNodeBump": 1,
+            "ShaderNodeMixRGB": 2,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeTexCoord": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_SUBTRACT": 1,
+            "ShaderNodeVectorMath_ADD": 1,
+            "ShaderNodeMath_ABSOLUTE": 2,
+            "ShaderNodeMath_GREATER_THAN": 2,
+            "ShaderNodeVectorMath_SCALE": 1,
+            "ShaderNodeMath_SUBTRACT": 3,
+            "ShaderNodeMath_ADD": 3,
+            "ShaderNodeMath_FRACT": 2,
+            "ShaderNodeMath_MULTIPLY": 5,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 1,
+            "ShaderNodeMath_LESS_THAN": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 2
+        }
+    },
+    "01": {
+        "nodes_count": 6,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeBump": 1,
+            "ShaderNodeValToRGB": 2,
+            "ShaderNodeBsdfPrincipled": 1,
+            "ShaderNodeTexWave": 1,
+            "ShaderNodeOutputMaterial": 1
+        },
+        "operations": {},
+        "blend_type": {}
+    },
+    "02": {
+        "nodes_count": 133,
+        "vertices": 0,
+        "nodes": {
+            "ShaderNodeVectorMath": 5,
+            "ShaderNodeVectorDisplacement": 4,
+            "ShaderNodeSeparateXYZ": 3,
+            "ShaderNodeCombineXYZ": 5,
+            "ShaderNodeMath": 49,
+            "ShaderNodeMixRGB": 4,
+            "NodeReroute": 41,
+            "ShaderNodeTexNoise": 6,
+            "ShaderNodeValToRGB": 7,
+            "ShaderNodeMapping": 1,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeValue": 3,
+            "ShaderNodeRGBCurve": 1,
+            "ShaderNodeBump": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeBsdfPrincipled": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_ADD": 2,
+            "ShaderNodeVectorMath_NORMALIZE": 1,
+            "ShaderNodeMath_SUBTRACT": 6,
+            "ShaderNodeMath_MULTIPLY": 13,
+            "ShaderNodeMath_FLOOR": 2,
+            "ShaderNodeMath_ADD": 8,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeMath_DIVIDE": 2,
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeMath_POWER": 11,
+            "ShaderNodeMath_ABSOLUTE": 1,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 1,
+            "ShaderNodeMath_MAXIMUM": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 1,
+            "ShaderNodeMixRGB_ADD": 1,
+            "ShaderNodeMixRGB_MIX": 2
+        }
+    },
+    "03": {
+        "nodes_count": 45,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeMath": 16,
+            "NodeReroute": 15,
+            "ShaderNodeMixRGB": 2,
+            "ShaderNodeVectorMath": 1,
+            "ShaderNodeCombineXYZ": 2,
+            "ShaderNodeTexNoise": 2,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeSeparateXYZ": 1,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeValue": 2,
+            "ShaderNodeValToRGB": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 3,
+            "ShaderNodeMath_MULTIPLY": 7,
+            "ShaderNodeMath_FRACT": 1,
+            "ShaderNodeMath_SUBTRACT": 2,
+            "ShaderNodeMath_POWER": 3,
+            "ShaderNodeVectorMath_ADD": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_ADD": 1,
+            "ShaderNodeMixRGB_DIVIDE": 1
+        }
+    },
+    "04": {
+        "nodes_count": 186,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeCombineXYZ": 8,
+            "ShaderNodeMath": 74,
+            "NodeReroute": 54,
+            "ShaderNodeSeparateXYZ": 6,
+            "ShaderNodeVectorDisplacement": 2,
+            "ShaderNodeTexNoise": 10,
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeValue": 4,
+            "ShaderNodeMixRGB": 12,
+            "ShaderNodeValToRGB": 4,
+            "ShaderNodeTexCoord": 2,
+            "ShaderNodeVolumePrincipled": 2,
+            "ShaderNodeOutputMaterial": 3,
+            "ShaderNodeBsdfPrincipled": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 12,
+            "ShaderNodeMath_COSINE": 8,
+            "ShaderNodeMath_SINE": 6,
+            "ShaderNodeMath_MULTIPLY": 26,
+            "ShaderNodeMath_DIVIDE": 6,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeMath_ARCTAN2": 2,
+            "ShaderNodeMath_SUBTRACT": 8,
+            "ShaderNodeVectorMath_ADD": 2,
+            "ShaderNodeVectorMath_LENGTH": 2,
+            "ShaderNodeMath_POWER": 2
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 6,
+            "ShaderNodeMixRGB_MULTIPLY": 4,
+            "ShaderNodeMixRGB_ADD": 2
+        }
+    },
+    "05": {
+        "nodes_count": 250,
+        "vertices": 162,
+        "nodes": {
+            "ShaderNodeTexNoise": 37,
+            "ShaderNodeValToRGB": 17,
+            "ShaderNodeDisplacement": 9,
+            "ShaderNodeBsdfPrincipled": 16,
+            "ShaderNodeOutputMaterial": 15,
+            "ShaderNodeMath": 64,
+            "ShaderNodeValue": 2,
+            "ShaderNodeVectorMath": 22,
+            "ShaderNodeCombineXYZ": 23,
+            "ShaderNodeTexCoord": 1,
+            "NodeReroute": 23,
+            "ShaderNodeVectorDisplacement": 4,
+            "ShaderNodeSeparateXYZ": 2,
+            "ShaderNodeTexWave": 1,
+            "ShaderNodeBump": 1,
+            "ShaderNodeRGBCurve": 4,
+            "ShaderNodeMixRGB": 4,
+            "ShaderNodeNewGeometry": 4,
+            "ShaderNodeMixShader": 1
+        },
+        "operations": {
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeMath_DIVIDE": 1,
+            "ShaderNodeMath_FRACT": 1,
+            "ShaderNodeMath_MULTIPLY": 24,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeMath_ABSOLUTE": 5,
+            "ShaderNodeVectorMath_LENGTH": 5,
+            "ShaderNodeVectorMath_SUBTRACT": 5,
+            "ShaderNodeMath_SUBTRACT": 14,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 8,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 4,
+            "ShaderNodeMath_ARCSINE": 1,
+            "ShaderNodeMath_ADD": 13,
+            "ShaderNodeMath_GREATER_THAN": 1,
+            "ShaderNodeMath_LESS_THAN": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 4
+        }
+    },
+    "06": {
+        "nodes_count": 88,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeMath": 37,
+            "ShaderNodeSeparateXYZ": 5,
+            "ShaderNodeCombineXYZ": 8,
+            "ShaderNodeValue": 9,
+            "ShaderNodeMixRGB": 11,
+            "ShaderNodeVectorMath": 4,
+            "ShaderNodeTexNoise": 3,
+            "NodeReroute": 1,
+            "ShaderNodeTexCoord": 1,
+            "ShaderNodeTexGradient": 2,
+            "ShaderNodeValToRGB": 2,
+            "ShaderNodeTexMusgrave": 2,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeBsdfPrincipled": 1
+        },
+        "operations": {
+            "ShaderNodeMath_FLOOR": 6,
+            "ShaderNodeMath_ADD": 4,
+            "ShaderNodeMath_MULTIPLY": 5,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeMath_DIVIDE": 5,
+            "ShaderNodeVectorMath_ADD": 2,
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeMath_SUBTRACT": 10,
+            "ShaderNodeMath_POWER": 2,
+            "ShaderNodeMath_MAXIMUM": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 7,
+            "ShaderNodeMixRGB_MIX": 2,
+            "ShaderNodeMixRGB_ADD": 2
+        }
+    },
+    "07": {
+        "nodes_count": 179,
+        "vertices": 166,
+        "nodes": {
+            "ShaderNodeTexCoord": 4,
+            "ShaderNodeSeparateXYZ": 4,
+            "ShaderNodeOutputMaterial": 3,
+            "ShaderNodeMixRGB": 9,
+            "ShaderNodeMath": 60,
+            "ShaderNodeMixShader": 2,
+            "ShaderNodeBsdfTransparent": 1,
+            "ShaderNodeBsdfPrincipled": 4,
+            "ShaderNodeTexNoise": 11,
+            "ShaderNodeValue": 3,
+            "ShaderNodeVectorMath": 18,
+            "ShaderNodeCombineXYZ": 17,
+            "NodeReroute": 10,
+            "ShaderNodeVectorDisplacement": 4,
+            "ShaderNodeTexWave": 1,
+            "ShaderNodeValToRGB": 20,
+            "ShaderNodeBump": 1,
+            "NodeFrame": 2,
+            "ShaderNodeMapping": 1,
+            "ShaderNodeRGBCurve": 1,
+            "ShaderNodeDisplacement": 1,
+            "ShaderNodeTexVoronoi": 2
+        },
+        "operations": {
+            "ShaderNodeMath_GREATER_THAN": 4,
+            "ShaderNodeMath_MAXIMUM": 2,
+            "ShaderNodeMath_MULTIPLY": 26,
+            "ShaderNodeMath_ARCTAN2": 1,
+            "ShaderNodeMath_DIVIDE": 2,
+            "ShaderNodeMath_FRACT": 1,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeMath_ABSOLUTE": 6,
+            "ShaderNodeVectorMath_LENGTH": 5,
+            "ShaderNodeVectorMath_SUBTRACT": 5,
+            "ShaderNodeMath_SUBTRACT": 8,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 4,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 4,
+            "ShaderNodeMath_ARCSINE": 1,
+            "ShaderNodeMath_ADD": 7
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MIX": 7,
+            "ShaderNodeMixRGB_MULTIPLY": 2
+        }
+    },
+    "08": {
+        "nodes_count": 77,
+        "vertices": 8,
+        "nodes": {
+            "ShaderNodeTexNoise": 3,
+            "ShaderNodeCombineXYZ": 3,
+            "NodeReroute": 8,
+            "ShaderNodeValToRGB": 2,
+            "ShaderNodeMixRGB": 11,
+            "ShaderNodeBsdfPrincipled": 2,
+            "ShaderNodeTexCoord": 6,
+            "ShaderNodeVectorMath": 15,
+            "ShaderNodeVectorDisplacement": 2,
+            "ShaderNodeMath": 15,
+            "ShaderNodeDisplacement": 2,
+            "ShaderNodeOutputMaterial": 2,
+            "ShaderNodeTexVoronoi": 2,
+            "ShaderNodeRGBCurve": 2,
+            "ShaderNodeValue": 1,
+            "ShaderNodeEmission": 1
+        },
+        "operations": {
+            "ShaderNodeVectorMath_NORMALIZE": 2,
+            "ShaderNodeVectorMath_DOT_PRODUCT": 2,
+            "ShaderNodeVectorMath_CROSS_PRODUCT": 2,
+            "ShaderNodeMath_MULTIPLY": 7,
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeMath_ADD": 3,
+            "ShaderNodeVectorMath_ADD": 5,
+            "ShaderNodeMath_SQRT": 2,
+            "ShaderNodeVectorMath_LENGTH": 2,
+            "ShaderNodeMath_FRACT": 2,
+            "ShaderNodeMath_COSINE": 1
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_ADD": 2,
+            "ShaderNodeMixRGB_MULTIPLY": 6,
+            "ShaderNodeMixRGB_DIVIDE": 2,
+            "ShaderNodeMixRGB_MIX": 1
+        }
+    },
+    "09": {
+        "nodes_count": 87,
+        "vertices": 4,
+        "nodes": {
+            "ShaderNodeCombineXYZ": 12,
+            "ShaderNodeGroup": 5,
+            "ShaderNodeMath": 38,
+            "ShaderNodeValue": 4,
+            "ShaderNodeMixRGB": 7,
+            "ShaderNodeNewGeometry": 1,
+            "ShaderNodeTexNoise": 1,
+            "ShaderNodeValToRGB": 1,
+            "ShaderNodeOutputMaterial": 1,
+            "ShaderNodeEmission": 1,
+            "ShaderNodeSeparateXYZ": 3,
+            "NodeReroute": 7,
+            "ShaderNodeVectorMath": 4,
+            "NodeGroupInput": 2,
+            "ShaderNodeRGBCurve": 1,
+            "ShaderNodeTexGradient": 1,
+            "NodeGroupOutput": 2
+        },
+        "operations": {
+            "ShaderNodeMath_ADD": 7,
+            "ShaderNodeMath_MULTIPLY": 9,
+            "ShaderNodeMath_SQRT": 1,
+            "ShaderNodeMath_SUBTRACT": 7,
+            "ShaderNodeMath_SINE": 1,
+            "ShaderNodeMath_COSINE": 1,
+            "ShaderNodeMath_DIVIDE": 4,
+            "ShaderNodeMath_FRACT": 4,
+            "ShaderNodeMath_POWER": 1,
+            "ShaderNodeVectorMath_ADD": 1,
+            "ShaderNodeVectorMath_SUBTRACT": 2,
+            "ShaderNodeVectorMath_LENGTH": 1,
+            "ShaderNodeMath_FLOOR": 3
+        },
+        "blend_type": {
+            "ShaderNodeMixRGB_MULTIPLY": 5,
+            "ShaderNodeMixRGB_MIX": 2
+        }
+    },
+    "sum": 3924,
+    "ave": 130.8,
+    "sum_verts": 3095,
+    "ave_verts": 103.16666666666667
+}

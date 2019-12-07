@@ -40,10 +40,14 @@ function loadfile(id) {
 
 var tasks = [
     () => p.stdin.write(`import bpy\n`),
+    () => p.stdin.write(`from collections import Counter\n`),
+    () => p.stdin.write(`import json\n`),
 ]
 
 var sum = 0
 var sum_vertices = 0
+
+
 
 var result = {}
 for (let i = 1; i <= 30; i++) {
@@ -70,7 +74,27 @@ for (let i = 1; i <= 30; i++) {
 
         next()
     })
+    tasks.push(() => p.stdin.write(`print(json.dumps(Counter([n.bl_idname for x in [z.node_tree for z in bpy.data.materials]+[z for z in bpy.data.node_groups] for n in x.nodes])))\n`))
+    tasks.push(x => {
+
+        result[id].nodes = JSON.parse(x.trim())
+        next()
+    })
+    tasks.push(() => p.stdin.write(`print(json.dumps(Counter([n.bl_idname+'_'+n.operation for x in [z.node_tree for z in bpy.data.materials]+[z for z in bpy.data.node_groups] for n in x.nodes if hasattr(n,'operation')])))\n`))
+    tasks.push(x => {
+
+        result[id].operations = JSON.parse(x.trim())
+        next()
+    })
+    tasks.push(() => p.stdin.write(`print(json.dumps(Counter([n.bl_idname+'_'+n.blend_type for x in [z.node_tree for z in bpy.data.materials]+[z for z in bpy.data.node_groups] for n in x.nodes if hasattr(n,'blend_type')])))\n`))
+    tasks.push(x => {
+
+        result[id].blend_type = JSON.parse(x.trim())
+        next()
+    })
+
 }
+
 
 tasks.push(function () {
 
@@ -79,7 +103,7 @@ tasks.push(function () {
 
     result.sum_verts = sum_vertices
     result.ave_verts = sum_vertices / 30
-    fs.writeFileSync(__dirname+'/info.json', JSON.stringify(result))
+    fs.writeFileSync(__dirname + '/info.json', JSON.stringify(result))
 })
 
 function next(data) {
